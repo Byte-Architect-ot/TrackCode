@@ -1,0 +1,16 @@
+# Compiler/Judge Environment
+FROM ubuntu:22.04
+
+# Install compilers
+RUN apt-get update && apt-get install -y \
+    g++ \
+    gcc \
+    python3 \
+    time \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create workspace
+WORKDIR /workspace
+
+# Default command
+CMD ["/bin/bash"]

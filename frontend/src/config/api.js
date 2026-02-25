@@ -1,0 +1,42 @@
+/**
+ * API config for services/apis.js - uses api/config.js as source
+ */
+import config from '../api/config';
+
+export default {
+    BASE_URL: config.BASE_URL,
+    TIMEOUT: config.TIMEOUT,
+    ENDPOINTS: {
+        ...config.AUTH,
+        CREATE_CONTEST: config.CONTEST.CREATE,
+        ALL_CONTESTS: config.CONTEST.ALL,
+        MY_CONTESTS: config.CONTEST.MY_CONTESTS,
+        JOINED_CONTESTS: config.CONTEST.JOINED,
+        UPDATE_CONTEST: config.CONTEST.UPDATE,
+        DELETE_CONTEST: config.CONTEST.DELETE,
+        JOIN_CONTEST: config.CONTEST.JOIN,
+        CREATE_PROBLEM: config.PROBLEM.CREATE,
+        MY_PROBLEMS: config.PROBLEM.MY_PROBLEMS,
+        PUBLIC_PROBLEMS: config.PROBLEM.PUBLIC,
+        UPDATE_PROBLEM: config.PROBLEM.UPDATE,
+        DELETE_PROBLEM: config.PROBLEM.DELETE,
+        CREATE_QUESTION: config.QUESTION.CREATE,
+        ALL_QUESTIONS: config.QUESTION.ALL,
+        UPDATE_QUESTION: config.QUESTION.UPDATE,
+        DELETE_QUESTION: config.QUESTION.DELETE,
+        START_TEST: config.TEST.START,
+        SAVE_ANSWER: config.TEST.SAVE_ANSWER,
+        SUBMIT_TEST: config.TEST.SUBMIT,
+        LIVE_LEADERBOARD: config.LEADERBOARD.LIVE,
+        FINAL_RESULTS: config.LEADERBOARD.RESULTS,
+        MY_RESULT: config.LEADERBOARD.MY_RESULT,
+        SUBMIT_CODE: config.SUBMISSION.SUBMIT,
+        SUBMISSION_LIST: config.SUBMISSION.HISTORY_LIST,
+        SUBMISSION_DETAIL: config.SUBMISSION.HISTORY_ONE,
+        CF_USER: config.CODEFORCES.USER,
+        CF_UPSOLVE: config.CODEFORCES.UPSOLVE,
+        CF_TAGS: config.CODEFORCES.TAGS,
+        CF_RECOMMENDATIONS: config.CODEFORCES.RECOMMENDATIONS,
+        CF_CONTESTS: config.CODEFORCES.CONTESTS
+    }
+};

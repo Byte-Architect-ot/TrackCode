@@ -1,0 +1,11 @@
+{
+  "name": "skillgraph",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start-backend": "node backend/server.js",
+    "start-frontend": "cd frontend && npm run dev",
+    "build-frontend": "cd frontend && npm run build",
+    "dev": "echo 'Run `npm run start-backend` and `npm run start-frontend` in separate terminals'"
+  }
+}
